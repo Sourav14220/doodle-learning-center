@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doodle Learning Center | Course Catalog</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo-area">
+        <img src="images/logo-thumb.png" alt="Doodle Learning Center Logo" class="logo-img">
+        <h1>Doodle Learning Center</h1>
+      </div>
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="media.html">Visual Hub</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main">
+    <section aria-labelledby="catalog-heading">
+      <h2 id="catalog-heading" class="section-title">Explore Our Course Catalog</h2>
+      <p class="section-subtitle">Search and filter through our flexible, hands-on learning paths.</p>
+
+      <!-- Live Search & Filters -->
+      <div class="course-controls">
+        <div class="search-box">
+          <input type="text" id="courseSearch" placeholder="🔍 Search courses by title or keyword..." aria-label="Search courses">
+        </div>
+
+        <div class="filter-tabs" role="tablist" aria-label="Course Categories">
+          <button class="course-tab-btn active" data-category="all" role="tab" aria-selected="true">All Courses</button>
+          <button class="course-tab-btn" data-category="programming" role="tab" aria-selected="false">Programming</button>
+          <button class="course-tab-btn" data-category="data" role="tab" aria-selected="false">Data & AI</button>
+          <button class="course-tab-btn" data-category="welfare" role="tab" aria-selected="false">Student Welfare</button>
+        </div>
+      </div>
+
+      <!-- Course Cards Container -->
+      <div class="card-grid" id="courseGrid">
+
+        <!-- Course 1 -->
+        <article class="card course-card" data-category="programming" data-title="Python Programming Foundations">
+          <div class="img-container">
+            <img src="images/course-python.jpg" alt="Laptop screen displaying Python code">
+            <span class="badge">Programming</span>
+          </div>
+          <h3>Python Programming Foundations</h3>
+          <p>Master core programming logic, algorithms, and real-world problem solving with hands-on exercises.</p>
+          <div class="course-meta">
+            <span>⏱️ 6 Weeks</span>
+            <span>⭐ 4.9 (1.2k reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="card course-card" data-category="data" data-title="Machine Learning Essentials">
+          <div class="img-container">
+            <img src="images/course-machine-learning.jpg" alt="Abstract neural network graphic">
+            <span class="badge">Data & AI</span>
+          </div>
+          <h3>Machine Learning Essentials</h3>
+          <p>Understand predictive modeling, regression algorithms, and practical neural networks from scratch.</p>
+          <div class="course-meta">
+            <span>⏱️ 8 Weeks</span>
+            <span>⭐ 4.8 (850 reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+        <!-- Course 3 -->
+        <article class="card course-card" data-category="programming" data-title="Modern Android Application Development">
+          <div class="img-container">
+            <img src="images/course-android.jpg" alt="Smartphone displaying mobile app UI">
+            <span class="badge">Programming</span>
+          </div>
+          <h3>Modern Android App Development</h3>
+          <p>Build native mobile apps using Kotlin, modern architectural components, and RESTful APIs.</p>
+          <div class="course-meta">
+            <span>⏱️ 7 Weeks</span>
+            <span>⭐ 4.7 (620 reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+        <!-- Course 4 -->
+        <article class="card course-card" data-category="data" data-title="Applied Data Analytics and Statistics">
+          <div class="img-container">
+            <img src="images/course-statistics.jpg" alt="Data charts and analytics screen">
+            <span class="badge">Data & AI</span>
+          </div>
+          <h3>Applied Data Analytics & Statistics</h3>
+          <p>Learn how to clean, analyze, and visualize complex datasets using statistical software models.</p>
+          <div class="course-meta">
+            <span>⏱️ 5 Weeks</span>
+            <span>⭐ 4.9 (410 reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+        <!-- Course 5 -->
+        <article class="card course-card" data-category="welfare" data-title="Consent Matters Healthy Relationships">
+          <div class="img-container">
+            <img src="images/course-consent-matters.jpg" alt="Students sitting together in discussion">
+            <span class="badge">Student Welfare</span>
+          </div>
+          <h3>Consent Matters & Healthy Relationships</h3>
+          <p>An essential interactive module covering mutual respect, boundary setting, and positive campus culture.</p>
+          <div class="course-meta">
+            <span>⏱️ 2 Weeks</span>
+            <span>⭐ 5.0 (2.4k reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+        <!-- Course 6 -->
+        <article class="card course-card" data-category="programming" data-title="Full-Stack Web Development">
+          <div class="img-container">
+            <img src="images/course-webdev.jpg" alt="Web code editor display">
+            <span class="badge">Programming</span>
+          </div>
+          <h3>Full-Stack Web Development</h3>
+          <p>Build responsive web applications using HTML5, CSS Grid, JavaScript, and backend web APIs.</p>
+          <div class="course-meta">
+            <span>⏱️ 10 Weeks</span>
+            <span>⭐ 4.9 (1.8k reviews)</span>
+          </div>
+          <button class="btn-learn-more">Enroll Now</button>
+        </article>
+
+      </div>
+
+      <div id="noResultsMsg" class="no-results" style="display: none;">
+        <p>No courses match your search criteria. Try typing a different keyword or choosing another category.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <p>&copy; 2026 Doodle Learning Center. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
